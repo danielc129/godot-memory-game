@@ -1,0 +1,135 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuxap0nv0tn1r"]
+
+[ext_resource type="Theme" uid="uid://byrnvc6ahymtc" path="res://button.tres" id="1_hy0gm"]
+[ext_resource type="Script" path="res://GameController.gd" id="1_tc6io"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(2, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_tc6io")
+
+[node name="Button" type="Button" parent="CanvasLayer" groups=["button"]]
+offset_left = 132.0
+offset_top = 230.0
+offset_right = 207.0
+offset_bottom = 305.0
+theme = ExtResource("1_hy0gm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="CanvasLayer" groups=["button"]]
+offset_left = 214.0
+offset_top = 230.0
+offset_right = 289.0
+offset_bottom = 305.0
+theme = ExtResource("1_hy0gm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="CanvasLayer" groups=["button"]]
+offset_left = 297.0
+offset_top = 230.0
+offset_right = 372.0
+offset_bottom = 305.0
+theme = ExtResource("1_hy0gm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="Button" parent="CanvasLayer" groups=["button"]]
+offset_left = 132.0
+offset_top = 313.0
+offset_right = 207.0
+offset_bottom = 388.0
+theme = ExtResource("1_hy0gm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button5" type="Button" parent="CanvasLayer" groups=["button"]]
+offset_left = 214.0
+offset_top = 313.0
+offset_right = 289.0
+offset_bottom = 388.0
+theme = ExtResource("1_hy0gm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button6" type="Button" parent="CanvasLayer" groups=["button"]]
+offset_left = 297.0
+offset_top = 313.0
+offset_right = 372.0
+offset_bottom = 388.0
+theme = ExtResource("1_hy0gm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button7" type="Button" parent="CanvasLayer" groups=["button"]]
+offset_left = 132.0
+offset_top = 396.0
+offset_right = 207.0
+offset_bottom = 471.0
+theme = ExtResource("1_hy0gm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button8" type="Button" parent="CanvasLayer" groups=["button"]]
+offset_left = 214.0
+offset_top = 396.0
+offset_right = 289.0
+offset_bottom = 471.0
+theme = ExtResource("1_hy0gm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button9" type="Button" parent="CanvasLayer" groups=["button"]]
+offset_left = 297.0
+offset_top = 396.0
+offset_right = 372.0
+offset_bottom = 471.0
+theme = ExtResource("1_hy0gm")
+metadata/_edit_use_anchors_ = true
+
+[node name="StartButton" type="Button" parent="CanvasLayer"]
+offset_left = 200.0
+offset_top = 509.0
+offset_right = 299.0
+offset_bottom = 565.0
+text = "Start"
+metadata/_edit_use_anchors_ = true
+
+[node name="LevelText" type="Label" parent="CanvasLayer"]
+offset_left = 221.0
+offset_top = 188.0
+offset_right = 305.0
+offset_bottom = 223.0
+text = "Level: 1"
+metadata/_edit_use_anchors_ = true
+
+[node name="GameOverText" type="Label" parent="CanvasLayer"]
+offset_left = 208.0
+offset_top = 162.0
+offset_right = 295.0
+offset_bottom = 197.0
+text = "Game Over"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="CanvasLayer/Button" to="CanvasLayer" method="_on_button_button_down"]
+[connection signal="button_up" from="CanvasLayer/Button" to="CanvasLayer" method="_on_button_button_up"]
+[connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer" method="_on_button_pressed"]
+[connection signal="button_down" from="CanvasLayer/Button2" to="CanvasLayer" method="_on_button_2_button_down"]
+[connection signal="button_up" from="CanvasLayer/Button2" to="CanvasLayer" method="_on_button_2_button_up"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="CanvasLayer" method="_on_button_2_pressed"]
+[connection signal="button_down" from="CanvasLayer/Button3" to="CanvasLayer" method="_on_button_3_button_down"]
+[connection signal="button_up" from="CanvasLayer/Button3" to="CanvasLayer" method="_on_button_3_button_up"]
+[connection signal="pressed" from="CanvasLayer/Button3" to="CanvasLayer" method="_on_button_3_pressed"]
+[connection signal="button_down" from="CanvasLayer/Button4" to="CanvasLayer" method="_on_button_4_button_down"]
+[connection signal="button_up" from="CanvasLayer/Button4" to="CanvasLayer" method="_on_button_4_button_up"]
+[connection signal="pressed" from="CanvasLayer/Button4" to="CanvasLayer" method="_on_button_4_pressed"]
+[connection signal="button_down" from="CanvasLayer/Button5" to="CanvasLayer" method="_on_button_5_button_down"]
+[connection signal="button_up" from="CanvasLayer/Button5" to="CanvasLayer" method="_on_button_5_button_up"]
+[connection signal="pressed" from="CanvasLayer/Button5" to="CanvasLayer" method="_on_button_5_pressed"]
+[connection signal="button_down" from="CanvasLayer/Button6" to="CanvasLayer" method="_on_button_6_button_down"]
+[connection signal="button_up" from="CanvasLayer/Button6" to="CanvasLayer" method="_on_button_6_button_up"]
+[connection signal="pressed" from="CanvasLayer/Button6" to="CanvasLayer" method="_on_button_6_pressed"]
+[connection signal="button_down" from="CanvasLayer/Button7" to="CanvasLayer" method="_on_button_7_button_down"]
+[connection signal="button_up" from="CanvasLayer/Button7" to="CanvasLayer" method="_on_button_7_button_up"]
+[connection signal="pressed" from="CanvasLayer/Button7" to="CanvasLayer" method="_on_button_7_pressed"]
+[connection signal="button_down" from="CanvasLayer/Button8" to="CanvasLayer" method="_on_button_8_button_down"]
+[connection signal="button_up" from="CanvasLayer/Button8" to="CanvasLayer" method="_on_button_8_button_up"]
+[connection signal="pressed" from="CanvasLayer/Button8" to="CanvasLayer" method="_on_button_8_pressed"]
+[connection signal="button_down" from="CanvasLayer/Button9" to="CanvasLayer" method="_on_button_9_button_down"]
+[connection signal="button_up" from="CanvasLayer/Button9" to="CanvasLayer" method="_on_button_9_button_up"]
+[connection signal="pressed" from="CanvasLayer/Button9" to="CanvasLayer" method="_on_button_9_pressed"]
+[connection signal="pressed" from="CanvasLayer/StartButton" to="CanvasLayer" method="_on_start_button_pressed"]
